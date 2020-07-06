@@ -53,6 +53,34 @@ input:hover, input:focus {
   }
 }
 
+.section_padding_serv {
+  padding: 100px 0px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .section_padding_serv {
+    padding: 80px 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section_padding_serv {
+    padding: 70px 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section_padding_serv {
+    padding: 70px 0px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .section_padding_serv {
+    padding: 70px 0px;
+  }
+}
+
 .single_padding_top {
   padding-top: 140px !important;
 }
@@ -763,6 +791,10 @@ ul {
   font-weight: 600;
 }
 
+.single-blog a:hover {
+  color: #fbf9ff;
+}
+
 .single-blog .date {
   color: #888;
   text-align: left;
@@ -774,7 +806,6 @@ ul {
 .single-blog .tag {
   text-align: left;
   display: inline-block;
-  float: left;
   font-size: 13px;
   font-weight: 300;
   margin-right: 22px;
@@ -861,6 +892,10 @@ ul {
   transition: 0.5s;
 }
 
+.full_image.single-blog .single-blog-content .meta-bottom p {
+  color: #fff;
+}
+
 @media (min-width: 992px) {
   .full_image.single-blog .single-blog-content {
     bottom: 100px;
@@ -876,6 +911,10 @@ ul {
 .full_image.single-blog a {
   font-size: 20px;
   font-weight: 600;
+}
+
+.full_image.single-blog a:hover {
+  color: #fbf9ff;
 }
 
 .full_image.single-blog .date {
@@ -1497,6 +1536,10 @@ ul {
   font-size: 15px;
 }
 
+.single-post-area .blog_details h2 {
+  color: #fbf9ff;
+}
+
 .single-post-area .quote-wrapper {
   background: rgba(130, 139, 178, 0.1);
   padding: 15px;
@@ -2080,7 +2123,7 @@ ul {
 
 /**************** banner part css start ****************/
 .banner_part {
-  height: 700px;
+  height: 800px;
   position: relative;
   overflow: hidden;
   background-image: url(../img/experiance_overlay.png);
@@ -2091,15 +2134,17 @@ ul {
 
 @media (max-width: 991px) {
   .banner_part {
-    height: 550px;
-    background-image: none;
+    height: 750px;
+    background-image: url(../img/header-img.jpg);
+    background-color: #f7f7f7;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .banner_part {
-    height: 450px;
-    background-image: none;
+    height: 650px;
+    background-image: url(../img/header-img.jpg);
+    background-color: #f7f7f7;
   }
 }
 
@@ -5489,7 +5534,7 @@ h1, h2, h3, h4, h5, h6 {
 .breadcrumb {
   position: relative;
   z-index: 1;
-  height: 250px;
+  height: 2rem;
 }
 
 .breadcrumb:after {

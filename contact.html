@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>sgt</title>
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="img/favicon.ico">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- animate CSS -->
@@ -60,10 +60,10 @@
                                       Services
                                   </a>
                                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                      <a class="dropdown-item" href="#">Surveying</a>
-                                      <a class="dropdown-item" href="#">Engineering</a>
-                                      <a class="dropdown-item" href="#">Plans</a>
-                                      <a class="dropdown-item" href="#">Bill Of Quantities</a>
+                                      <a class="dropdown-item" href="surveying.html">Surveying</a>
+                                      <a class="dropdown-item" href="engineering.html">Engineering</a>
+                                      <a class="dropdown-item" href="plans.html">Plans</a>
+                                      <a class="dropdown-item" href="bills.html">Bill Of Quantities</a>
                                       <a class="dropdown-item" href="#">construction</a>
                                   </div>
                               </li>
@@ -110,27 +110,30 @@
         <div id="map" style="height: 480px;"></div>
         <script>
           function initMap() {
-            var uluru = {lat: -25.363, lng: 131.044};
-            var grayStyles = [
-              {
-                featureType: "all",
-                stylers: [
-                  { saturation: -90 },
-                  { lightness: 50 }
-                ]
-              },
-              {elementType: 'labels.text.fill', stylers: [{color: '#ccdee9'}]}
-            ];
-            var map = new google.maps.Map(document.getElementById('map'), {
-              center: {lat: -31.197, lng: 150.744},
-              zoom: 9,
-              styles: grayStyles,
-              scrollwheel:  false
-            });
+            var uluru = {lat: 0.3338, lng: 32.5684};
+            // var grayStyles = [
+            //   {
+            //     featureType: "all",
+            //     stylers: [
+            //       { saturation: -90 },
+            //       { lightness: 50 }
+            //     ]
+            //   },
+            //   {elementType: 'labels.text.fill', stylers: [{color: '#ccdee9'}]}
+            // ];
+            // var map = new google.maps.Map(document.getElementById('map'), {
+            //   center: uluru,
+            //   zoom: 9,
+            //   styles: grayStyles,
+            //   scrollwheel:  false
+            // });
+            var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+          var marker = new google.maps.Marker({position: uluru, map: map});
           }
-          
         </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
+        <script  async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
         
       </div>
 
@@ -215,16 +218,16 @@
                   <div class="contact_info">
                       <ul>
                           <li>
-                              <a href="#">General Surveying</a>
+                              <a href="surveying.html">General Surveying</a>
                           </li>
                           <li>
-                              <a href="#">General Engineering</a>
+                              <a href="engineering.html">General Engineering</a>
                           </li>
                           <li>
-                              <a href="#">Plans (structural and architectural) </a>
+                              <a href="plans.html">Plans (structural and architectural) </a>
                           </li>
                           <li>
-                              <a href="#">Bill of Quantities (BOQS)</a>
+                              <a href="bills.html">Bill of Quantities (BOQS)</a>
                           </li>
                           <li>
                               <a href="#">Site management</a>
